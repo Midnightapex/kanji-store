@@ -1,0 +1,79 @@
+{
+  "store": {
+    "name": "Kanjo x Spirit",
+    "tagline": "Underground Osaka energy, reborn in Edmonton.",
+    "currency": "CAD",
+    "currency_symbol": "$",
+    "email": "orders@kanjoxspirit.com",
+    "origin_city": "Edmonton, AB",
+    "primary_color": "#9ee37d",
+    "free_shipping_threshold": 120.0,
+    "flat_shipping": 12.0,
+    "tax_rate": 0.05,
+    "discount_codes": {
+      "KANJO10": 0.1,
+      "EDMONTON": 0.15
+    },
+    "checkout": {
+      "KJS-HOOD-001": "https://buy.stripe.com/aFafZg6PMbk4dwk03ocEw02",
+      "KJS-DEC-002": "https://buy.stripe.com/8x2bJ05LI5ZKfEs4jEcEw01",
+      "KJS-FLG-003": "https://buy.stripe.com/4gM7sK0ro3RCak8bM6cEw00"
+    }
+  },
+  "products": [
+    {
+      "id": "KJS-HOOD-001",
+      "slug": "hoodie",
+      "title": "Oversized Hoodie - \"No Good Spirit\"",
+      "price": 35.0,
+      "image": "hoodie.png",
+      "description": "Homage to underground Osaka: front stencil chest logo; back EG rear-quarter illustration with graffiti overlay. Inner label: Built in the shadows of Osaka. Reborn in Edmonton.",
+      "options": {
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "tagline": "We run from the cops, not the culture.",
+      "details": "Drop-shoulder oversized fit. Heavy fleece blank recommended."
+    },
+    {
+      "id": "KJS-DEC-002",
+      "slug": "decals",
+      "title": "Vinyl Decal Set - \"Kanjo Code\"",
+      "price": 7.0,
+      "image": "decals.png",
+      "description": "Sticker pack with crew tag, kanji slogans, and Osaka plate style. Weather-resistant die-cut vinyl.",
+      "options": {
+        "Pack": [
+          "5-Piece",
+          "7-Piece"
+        ],
+        "Finish": [
+          "Matte White",
+          "Holographic"
+        ]
+      },
+      "tagline": "Daily-carry culture for cars, laptops, toolboxes.",
+      "details": "Original designs. Avoid trademarked logos."
+    },
+    {
+      "id": "KJS-FLG-003",
+      "slug": "flag",
+      "title": "3x5 Flag - \"Late Night Cruise Club\"",
+      "price": 20.0,
+      "image": "flag.png",
+      "description": "Black flag with EF powerslide and RUN OR DIE kanji. Single-sided polyester with grommets.",
+      "options": {
+        "Version": [
+          "Standard"
+        ]
+      },
+      "tagline": "Garage decor or meet banner.",
+      "details": "Ready to hang. Lightweight polyester."
+    }
+  ]
+}

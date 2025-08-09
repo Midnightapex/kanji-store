@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Checkout — Kanjo x Spirit</title><meta name="description" content="Complete your purchase."/><link rel="icon" href="/assets/favicon.png"/><link rel="stylesheet" href="/styles.css"/>
+<meta property="og:title" content="Checkout — Kanjo x Spirit"/><meta property="og:description" content="Complete your purchase."/><meta property="og:image" content="/assets/decals.png"/>
+<script defer src="/store.js"></script><script defer src="/script.js"></script></head><body><header class="header"><div class="container row"><div class="brand">KANJO <span class="accent">x</span> SPIRIT</div><nav class="nav"><a class="nav-link " href="/">Home</a><a class="nav-link " href="/products/hoodie.html">Hoodie</a><a class="nav-link " href="/products/decals.html">Decal Pack</a><a class="nav-link " href="/products/flag.html">Flag</a><a class="nav-link " href="/cart.html">Cart</a></nav></div></header>
+<main class="container">
+  <h1>Checkout</h1>
+  <div class="notice">Click the payment button for each item to complete purchase via Stripe.</div>
+  <div id="pay-grid" class="grid" style="margin-top:16px"></div>
+</main>
+<script>
+(async()=>{
+  const cfg=await loadConfig(); const cart=loadCart(); const pg=document.getElementById('pay-grid');
+  pg.innerHTML = cart.map(it=>{
+    const link = cfg.store.checkout[it.id]||'#';
+    return `<div class="card"><div class="pad"><div style="font-weight:800">${it.name}</div><div class="small">Qty ${it.qty}</div><a class="btn" href="${link}" target="_blank" rel="noopener">Pay now</a></div></div>`;
+  }).join('');
+})();
+</script>
+<footer class="footer"><div class="container row wrap"><div>© 2025 Kanjo x Spirit — Built in the shadows of Osaka. Reborn in Edmonton.</div><div class="muted small">Homage only. No affiliation with No Good Racing.</div></div></footer></body></html>
